@@ -1,7 +1,7 @@
 # longfu-travel｜龍福旅行社官網
 
 純靜態多頁 HTML，一個資料夾配一個 `index.html`，無框架、無建置工具。
-架構與內容規格見 Dropbox：`Claude-Cowork/mac-projects/work/龍福旅行社/龍福旅行社網站架構初稿_v1.md`。
+架構與內容規格見 Dropbox：`Claude-Cowork/mac-projects/work/龍福旅行社/龍福旅行社官網/龍福旅行社網站架構初稿_v1.md`。
 舊站盤點與切換計畫：`Claude-Cowork/mac-projects/work/龍福旅行社/龍福旅行社官網/官網matsu-tour_盤點與自建計畫_v1.md`。
 
 正式網域：`www.matsu-tour.com.tw`（HiNet 註冊，2027-06-10 到期）。舊站（Fillo 租用）2026-10 月底終止。
