@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>線上詢問表單｜龍福旅行社</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .box{max-width:440px;width:100%;text-align:center}
+  .box .btn{display:block;margin:20px 0 12px}
+  .state{display:none}
+  .state.on{display:block}
+</style>
+</head>
+<body>
+<main class="box">
+  <p class="eyebrow">龍福旅行社</p>
+
+  <div class="state" id="go">
+    <h1>正在開啟詢問表單</h1>
+    <p>如果沒有自動跳轉，請按下方按鈕。</p>
+    <a class="btn btn-deep" id="link" href="#">開啟詢問表單</a>
+  </div>
+
+  <div class="state" id="off">
+    <h1>線上表單目前無法使用</h1>
+    <p>請直接來電，我們當場回覆。</p>
+  </div>
+
+  <a class="phone" href="tel:+886227169600"><small>台北</small><b>02-2716-9600</b></a>
+  <p></p>
+  <a class="phone" href="tel:+88683622300"><small>馬祖南竿</small><b>0836-22300</b></a>
+  <p class="muted" style="margin-top:20px"><a href="../">回龍福旅行社首頁</a></p>
+</main>
+
+<script>
+// 換表單只改這兩行。表單網址由 Apps Script setup() 的執行紀錄取得（「填寫用」那一行）
+var FORM_URL = '';
+var CLOSED   = false;
+
+(function () {
+  var url = String(FORM_URL || '').trim();
+  if (CLOSED || !/^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/.test(url)) {
+    document.getElementById('off').className = 'state on';
+    return;
+  }
+  document.getElementById('link').href = url;
+  document.getElementById('go').className = 'state on';
+  location.replace(url);
+})();
+</script>
+</body>
+</html>

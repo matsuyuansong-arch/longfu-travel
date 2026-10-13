@@ -155,3 +155,27 @@ td.wrap-ok{white-space:normal}
 .site-footer ul{list-style:none;margin:0;padding:0}
 .site-footer li{margin-bottom:.3em}
 .site-footer .legal{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:var(--stone-light)}
+
+/* 行程頁 */
+.two-col.top{align-items:start}
+.narrow{max-width:760px}
+.narrow h2{margin-top:1.4em}
+.narrow h2:first-of-type{margin-top:.2em}
+.narrow h3{margin-top:1.2em;font-size:1.05rem}
+.days{display:grid;gap:24px}
+.day{background:#fff;border:1px solid var(--stone-pale);border-radius:10px;padding:22px 24px}
+.day header{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--stone-pale);padding-bottom:10px;margin-bottom:14px}
+.day header span{font-family:var(--serif);color:var(--sun-gold);font-weight:700;letter-spacing:.1em;font-size:.9rem}
+.day header h3{margin:0}
+.route{margin:0;padding-left:1.4em;display:grid;gap:10px}
+.route li{font-size:.95rem}
+.route b{display:block;color:var(--tear-deep)}
+.day-note{margin:16px 0 0;padding:10px 14px;background:var(--tear-foam);border-left:3px solid var(--tear-glow);font-size:.92rem}
+.day-meta{margin:16px 0 0;display:grid;gap:6px;font-size:.92rem}
+.day-meta div{display:grid;grid-template-columns:3em 1fr;gap:8px}
+.day-meta dt{color:var(--stone)}
+.day-meta dd{margin:0}
+.check{list-style:none;padding:0;margin:0}
+.check li{padding-left:1.6em;position:relative;margin-bottom:.4em}
+.check li::before{content:"";position:absolute;left:.2em;top:.55em;width:.7em;height:.4em;border-left:2px solid var(--tear-glow);border-bottom:2px solid var(--tear-glow);transform:rotate(-45deg)}
+@media(max-width:560px){.day{padding:18px 16px}}
