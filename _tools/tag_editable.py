@@ -17,7 +17,7 @@ import os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP = {'404.html', 'privacy/index.html', 'inquiry/index.html'}
 TAGS = 'h1|h2|h3|h4|p|li|dt|dd|td|th'
-CMS_VER = '1'
+CMS_VER = '2'
 
 OPEN = re.compile(r'<(%s)(\s[^>]*)?>|<span class="(?:eyebrow|tag|price)"[^>]*>|<a\b[^>]*>|</a>' % TAGS)
 

@@ -12,6 +12,19 @@
 (function () {
   'use strict';
 
+  // 直接用瀏覽器開本機檔案（file://）時，資料夾連結不會自動開 index.html，這裡補上。正式網站不受影響
+  if (location.protocol === 'file:') {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      var h = a.getAttribute('href');
+      if (/^(?![a-z]+:|#|\/)(.*\/)?(#.*)?$/i.test(h)) {
+        var i = h.indexOf('#');
+        a.setAttribute('href', i < 0 ? h + 'index.html' : h.slice(0, i) + 'index.html' + h.slice(i));
+      } else if (h === './' || h === '../' || /^(\.\.\/)+$/.test(h)) {
+        a.setAttribute('href', h + 'index.html');
+      }
+    });
+  }
+
   // ★ 後台網址：GAS 網頁應用程式的 /exec 網址。空白＝不啟用（網站照常顯示原文）
   var API = 'https://script.google.com/macros/s/AKfycbys4KmE0_TTtXnF3RZBcm4WskkuDUQ5ZFhd_a81u-5JwX0xoDBbUvh33y-fto9OGag3/exec';
 
