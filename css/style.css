@@ -30,10 +30,12 @@ p{margin:0 0 1em}
 .draft{background:var(--wine-red);color:#fff;font-size:.85rem;padding:.5em 20px;text-align:center}
 .draft strong{color:#fff}
 
-/* 頁首 */
+/* 頁首：標誌圖用旅行社 LOGO 原色，版面色仍用龍福藍族（配色方案 A，2026-10-13） */
 .site-header{position:sticky;top:0;z-index:20;background:rgba(251,249,244,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--stone-pale)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.15}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1.15}
+.brand img{width:58px;height:auto;flex:none}
+.brand span{display:flex;flex-direction:column}
 .brand b{font-family:var(--serif);font-size:1.3rem;color:var(--tear-deep);letter-spacing:.05em}
 .brand small{font-size:.72rem;color:var(--stone);letter-spacing:.08em}
 .nav-toggle{display:none;background:none;border:1px solid var(--stone-pale);border-radius:6px;padding:6px 10px;font:inherit;color:var(--tear-deep)}
