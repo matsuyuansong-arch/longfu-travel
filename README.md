@@ -16,7 +16,7 @@
 | `legal/` | 旅遊契約、執照與保險、隱私權 |
 | `privacy/` | 舊網址 `/privacy` 轉到 `legal/#privacy` |
 | `404.html` | 舊網址 `/products/...`、`/member` 等，3 秒後回首頁 |
-| `CNAME`、`robots.txt`、`sitemap.xml` | 網域與搜尋引擎設定 |
+| `robots.txt`、`sitemap.xml` | 搜尋引擎設定 |
 
 舊網址 `/about`、`/contact` 由 GitHub Pages 自動補斜線接到新頁。
 
@@ -34,3 +34,12 @@
 ```bash
 python3 -m http.server 8961 -d ~/longfu-travel
 ```
+
+## 切換網域（舊站到期前做）
+
+`CNAME` 檔刻意先不放：放了之後 github.io 測試網址會被轉到正式網域，而正式網域那時還指向舊站，就沒辦法測。
+
+1. 測試網址 `https://matsuyuansong-arch.github.io/longfu-travel/` 每頁點過
+2. HiNet DNS：`www` 改 CNAME → `matsuyuansong-arch.github.io`
+3. GitHub repo Settings → Pages → Custom domain 填 `www.matsu-tour.com.tw`（會自動產生 CNAME commit，記得 `git pull`）
+4. 憑證核發後勾 Enforce HTTPS，`curl -I https://www.matsu-tour.com.tw/` 回 200
