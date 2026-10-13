@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>龍福旅行社｜馬祖北竿在地旅行社，民國 93 年成立</title>
 <meta name="description" content="龍福旅行社成立於民國 93 年，總部在馬祖北竿塘歧。南北竿、東引、東莒、大坵三日遊團體行程，機加酒自由行，學校與公司包團、同業地接。台北 02-2716-9600、南竿 0836-22300。">
-<!-- TODO 上線前：把 https://example.com 全部換成正式網域（D5），並核對 identifier 兩個字號（D6） -->
-<link rel="canonical" href="https://example.com/">
+<link rel="canonical" href="https://www.matsu-tour.com.tw/">
 <meta property="og:title" content="龍福旅行社｜馬祖北竿在地旅行社">
 <meta property="og:description" content="民國 93 年成立的馬祖在地旅行社。團體行程、機加酒自由行、包團與同業地接。">
-<meta property="og:image" content="https://example.com/img/beach.webp">
+<meta property="og:image" content="https://www.matsu-tour.com.tw/img/beach.webp">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
@@ -18,10 +17,10 @@
 {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  "@id": "https://example.com/#org",
+  "@id": "https://www.matsu-tour.com.tw/#org",
   "name": "龍福旅行社",
   "legalName": "龍福旅行社有限公司",
-  "url": "https://example.com/",
+  "url": "https://www.matsu-tour.com.tw/",
   "taxID": "80646474",
   "identifier": [
     { "@type": "PropertyValue", "name": "交通部觀光署旅行業註冊編號", "value": "交觀甲第 6701 號" },
@@ -49,11 +48,11 @@
   ],
   "knowsAbout": ["馬祖旅遊", "藍眼淚", "芹壁聚落", "北海坑道", "東引", "東莒", "大坵梅花鹿"],
   "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 南北竿三日遊", "url": "https://example.com/tours/nangan-beigan-3d/" } },
-    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 大坵梅花鹿三日遊", "url": "https://example.com/tours/daqiu-deer-3d/" } },
-    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 東引三日遊", "url": "https://example.com/tours/dongyin-3d/" } },
-    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 東莒三日遊", "url": "https://example.com/tours/dongju-3d/" } },
-    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "馬祖北竿 機加酒自由行 三天兩夜", "url": "https://example.com/packages/air-hotel/" }, "price": "11000", "priceCurrency": "TWD", "eligibleQuantity": { "@type": "QuantitativeValue", "value": 2, "unitText": "人" } }
+    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 南北竿三日遊" } },
+    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 大坵梅花鹿三日遊" } },
+    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 東引三日遊" } },
+    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "饗趣馬祖 東莒三日遊" } },
+    { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "馬祖北竿 機加酒自由行 三天兩夜", "url": "https://www.matsu-tour.com.tw/#package" }, "price": "11000", "priceCurrency": "TWD", "eligibleQuantity": { "@type": "QuantitativeValue", "value": 2, "unitText": "人" } }
   ],
   "memberOf": { "@type": "Organization", "name": "中華民國旅行業品質保障協會" }
 }
@@ -61,19 +60,16 @@
 </head>
 <body>
 
-<div class="draft"><strong>草稿頁</strong>　執照字號待核對原件、網域未定、東莒照片待補。正式上線前移除本列。</div>
-
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="./"><b>龍福旅行社</b><small>馬祖北竿・民國 93 年成立</small></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">選單</button>
     <ul class="nav" id="nav">
-      <li><a href="tours/">行程</a></li>
-      <li><a href="experiences/">體驗</a></li>
-      <li><a href="packages/air-hotel/">機加酒自由行</a></li>
-      <li><a href="custom/">包團與同業</a></li>
+      <li><a href="#tours">團體行程</a></li>
+      <li><a href="#package">機加酒自由行</a></li>
       <li><a href="about/">關於龍福</a></li>
-      <li class="cta"><a href="#contact">來電／報名</a></li>
+      <li><a href="contact/">聯絡我們</a></li>
+      <li class="cta"><a href="tel:+886227169600">來電 02-2716-9600</a></li>
     </ul>
   </div>
 </header>
@@ -87,8 +83,8 @@
     <h1>馬祖的路，我們從民國 93 年走到現在。</h1>
     <p>龍福旅行社在北竿塘歧成立，行程自己規劃、自己帶。遊覽車、住宿、餐廳由集團關係企業自營，客人到了島上，每一段都有人接手。</p>
     <div class="actions">
-      <a class="btn btn-primary" href="tours/">看團體行程</a>
-      <a class="btn btn-outline" href="custom/">包團與同業洽詢</a>
+      <a class="btn btn-primary" href="#tours">看團體行程</a>
+      <a class="btn btn-outline" href="contact/">包團與同業洽詢</a>
     </div>
   </div>
 </section>
@@ -111,7 +107,7 @@
             <li>北海坑道日間搖櫓</li>
             <li>海鮮痛風餐配藍眼淚葡萄酒</li>
           </ul>
-          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="tours/nangan-beigan-3d/">看行程</a></div>
+          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="contact/">洽詢</a></div>
         </div>
       </article>
       <article class="card">
@@ -124,7 +120,7 @@
             <li>北海坑道搖櫓、芹壁海景下午茶</li>
             <li>海鮮痛風餐配藍眼淚葡萄酒</li>
           </ul>
-          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="tours/daqiu-deer-3d/">看行程</a></div>
+          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="contact/">洽詢</a></div>
         </div>
       </article>
       <article class="card">
@@ -137,11 +133,11 @@
             <li>東引燈塔、國之北疆座標碑</li>
             <li>烈女義坑、一線天海蝕崖</li>
           </ul>
-          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="tours/dongyin-3d/">看行程</a></div>
+          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="contact/">洽詢</a></div>
         </div>
       </article>
       <article class="card">
-        <div class="media"><div class="placeholder">東莒燈塔照片待補</div></div>
+        <div class="media"><div class="placeholder">東莒</div></div>
         <div class="body">
           <span class="tag">三天兩夜｜南北竿＋東莒</span>
           <h3>饗趣馬祖 東莒三日遊</h3>
@@ -150,11 +146,11 @@
             <li>福正聚落的閩東石屋與白馬尊王廟</li>
             <li>神秘小海灣，季節對了岸邊看藍眼淚</li>
           </ul>
-          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="tours/dongju-3d/">看行程</a></div>
+          <div class="foot"><span class="price">專案優惠價，來電洽詢</span><a href="contact/">洽詢</a></div>
         </div>
       </article>
     </div>
-    <p class="muted" style="margin-top:20px">115 年出發期間 4 月 1 日至 9 月 30 日。下一期出發日期與含／不含機票版本，請來電確認。入住龍福山莊的貴賓，另安排夜航出海追藍眼淚；海象不佳改岸邊尋淚。</p>
+    <p class="muted" style="margin-top:20px">出發日期與含／不含機票版本，請來電確認。入住龍福山莊的貴賓，另安排夜航出海追藍眼淚；海象不佳改岸邊尋淚。</p>
   </div>
 </section>
 
@@ -174,6 +170,7 @@
   </div>
 </section>
 
+<!-- 補助方案區塊：住宿日 115.11.30 截止，12 月起刪除或改常態版（架構初稿 D12） -->
 <section class="section section-deep" id="package">
   <div class="wrap">
     <div class="offer">
@@ -188,7 +185,7 @@
           <li>出發日限週日、一、二、三，最後合格出發日 11 月 29 日</li>
         </ul>
         <p class="note">符合資格的旅客，國旅住宿補助最高折抵 2,500 元／房，入住時現場折抵。補助以觀光署核定為準，核定不成立時方案價格不變。旅客需先在觀光署平台完成登錄。</p>
-        <a class="btn btn-primary" href="packages/air-hotel/">方案細節與報名</a>
+        <a class="btn btn-primary" href="https://matsuyuansong-arch.github.io/booking/" rel="noopener">填寫報名表單</a>
       </div>
       <aside class="side">
         <h3>訂位怎麼走</h3>
@@ -207,8 +204,8 @@
 <section class="section" id="trust">
   <div class="wrap">
     <div class="trust">
-      <div><b>交觀甲第 6701 號<span class="pending">待核對</span></b><span>交通部觀光署旅行業註冊</span></div>
-      <div><b>品保馬 0003<span class="pending">待核對</span></b><span>旅行業品質保障協會會員</span></div>
+      <div><b>交觀甲第 6701 號</b><span>交通部觀光署旅行業註冊</span></div>
+      <div><b>品保馬 0003</b><span>旅行業品質保障協會會員</span></div>
       <div><b>民國 93 年</b><span>龍福旅行社有限公司核准設立</span></div>
       <div><b>旅遊責任保險</b><span>團體行程與導覽均投保</span></div>
       <div><b>集團自營</b><span>遊覽車・龍福山莊・餐廳</span></div>
@@ -225,9 +222,9 @@
     </div>
     <div class="contact">
       <a class="phone" href="tel:+886227169600"><small>台北</small><b>02-2716-9600</b></a>
-      <a class="phone" href="tel:+886836223000"><small>馬祖南竿</small><b>0836-22300</b></a>
+      <a class="phone" href="tel:+88683622300"><small>馬祖南竿</small><b>0836-22300</b></a>
       <div>
-        <p><a class="btn btn-deep" href="contact/">線上詢問表單</a></p>
+        <p><a class="btn btn-deep" href="contact/">LINE 與其他聯絡方式</a></p>
         <p class="muted">龍福旅行社有限公司<br>連江縣北竿鄉塘歧村 227 號 1 樓<br>表單不收身分證字號；補助登錄由旅客自行至觀光署平台辦理。</p>
       </div>
     </div>
@@ -244,39 +241,31 @@
         <ul>
           <li>龍福旅行社有限公司</li>
           <li>統一編號 80646474</li>
+          <li>交觀甲第 6701 號｜品保馬 0003</li>
           <li>連江縣北竿鄉塘歧村 227 號 1 樓</li>
           <li>台北 02-2716-9600｜南竿 0836-22300</li>
         </ul>
       </div>
       <div>
-        <h4>行程與方案</h4>
+        <h4>網站</h4>
         <ul>
-          <li><a href="tours/">饗趣馬祖 團體行程</a></li>
-          <li><a href="packages/air-hotel/">機加酒自由行</a></li>
-          <li><a href="packages/local-guide-3d/">南北竿三天專業導覽</a></li>
-          <li><a href="custom/">學校、公司、社團包團</a></li>
-          <li><a href="b2b/">同業合作</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>集團關係企業</h4>
-        <ul>
-          <li>龍福山莊（連江縣旅館 001 號）</li>
-          <li>龍福遊覽車有限公司</li>
-          <li>龍福開發股份有限公司</li>
-        </ul>
-      </div>
-      <div>
-        <h4>其他</h4>
-        <ul>
+          <li><a href="#tours">饗趣馬祖 團體行程</a></li>
+          <li><a href="#package">機加酒自由行</a></li>
           <li><a href="about/">關於龍福</a></li>
-          <li><a href="guide/">馬祖旅遊須知</a></li>
-          <li><a href="faq/">常見問題</a></li>
-          <li><a href="legal/">契約、保險與隱私</a></li>
+          <li><a href="contact/">聯絡我們</a></li>
+          <li><a href="legal/">旅遊契約與隱私權</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相關連結</h4>
+        <ul>
+          <li><a href="https://hotel.matsu.idv.tw/matsu-play/" rel="noopener">龍福山莊</a></li>
+          <li><a href="https://www.facebook.com/longfu55661" rel="noopener">Facebook 粉絲專頁</a></li>
+          <li><a href="https://www.mtha.gov.tw/MTHA/Monthinfo.aspx" rel="noopener">馬祖船班資訊（航港局）</a></li>
         </ul>
       </div>
     </div>
-    <div class="legal">© 龍福旅行社有限公司。本站資訊最後確認日期 2026-09-06。行程內容視天候與船班調整，藍眼淚為自然現象，不保證出現。</div>
+    <div class="legal">© 龍福旅行社有限公司。本站資訊最後確認日期 2026-10-13。行程內容視天候與船班調整，藍眼淚為自然現象，不保證出現。</div>
   </div>
 </footer>
 
